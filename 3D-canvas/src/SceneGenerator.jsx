@@ -33,7 +33,7 @@ const Wall = React.memo(({ wall }) => {
       castShadow
       receiveShadow
     >
-      <boxGeometry args={[length, 3, 0.15]} />
+      <boxGeometry args={[length, 1.5, 0.05]} />
       <meshLambertMaterial 
         color="#f8f8f8" 
         transparent 
@@ -147,7 +147,7 @@ const SceneGenerator = ({ layoutData, showRoof }) => {
       
       {/* House container - centered & scaled */}
       <CameraRig>
-        <group position={[0, 0, 0]}>
+        <group position={[0, -0.1, 0]}>
           {/* Walls - limited for performance */}
           {walls.slice(0, 100).map((wall, i) => (
             <Wall key={`wall-${i}`} wall={wall} />

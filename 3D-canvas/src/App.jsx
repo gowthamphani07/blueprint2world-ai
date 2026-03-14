@@ -17,7 +17,7 @@ function App() {
 
     setLoading(true);
     try {
-      const response = await axios.post("https://digestible-interminable-katy.ngrok-free.dev/api/upload", formData, {
+      const response = await axios.post("https://blueprint2world-ai.onrender.com/api/upload", formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
       setLayout(response.data);
