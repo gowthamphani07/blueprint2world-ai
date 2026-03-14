@@ -125,7 +125,7 @@ const SceneGenerator = ({ layoutData, showRoof }) => {
       gl={{
         antialias: true,
         toneMapping: THREE.ACESFilmicToneMapping,
-        outputEncoding: THREE.sRGBEncoding
+        outputEncoding: THREE.SRGBEncoding
       }}
       shadows
       dpr={[1, 2]}
