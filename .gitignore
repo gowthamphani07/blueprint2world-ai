@@ -1,0 +1,13 @@
+# ignore frontend repo
+frontend/
+
+# python
+__pycache__/
+*.pyc
+
+# runtime folders
+uploads/
+outputs/
+
+# env
+.env
